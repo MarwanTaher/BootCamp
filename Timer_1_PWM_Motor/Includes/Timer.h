@@ -11,13 +11,14 @@
 #define F_CPU 16000000UL
 #endif
 
-#define ZEROBITS 8
+#define ZEROBITS 0
 #define EIGHTBITS 8
 #define MASK 0xFF
 #define TOP_VALUE 56000
 #define Start 0
 #define Stop 1
 #define Ready 2
+#define FAST_PWM 0
 
 #define RESET 0x00
 #define ONE_SEC   1000
@@ -44,7 +45,7 @@ extern void timer_delay(uint32 n);
 /* Initialize Timer Zero */
 /************************************************************************/
 
-void timer_init(void);
+void timer_init(uint8 Mode);
  
  
  

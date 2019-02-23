@@ -31,8 +31,8 @@ volatile uint16 Speed_Value;
 	{
 		
 		Speed_Value=((Speed*TOP_VALUE)/Hundered);
-		COMPARE_Value_H=((Speed_Value>>EIGHTBITS) & MASK);
-		COMPARE_Value_L=((Speed_Value>>ZEROBITS) & MASK);
+		OCR1AH_H=((Speed_Value>>EIGHTBITS) & MASK);
+		OCR1AL_H=((Speed_Value>>ZEROBITS) & MASK);
 		DIO_WritePin(PIN30,HIGH);
 		DIO_WritePin(PIN31,LOW);				
 
@@ -40,8 +40,8 @@ volatile uint16 Speed_Value;
 	else if (MotorDir==AntiClockWise)
 	{
 		Speed_Value=((Speed*TOP_VALUE)/Hundered);
-		COMPARE_Value_H=((Speed_Value>>EIGHTBITS) & MASK);
-		COMPARE_Value_L=((Speed_Value>>ZEROBITS) & MASK);
+		OCR1AH_H=((Speed_Value>>EIGHTBITS) & MASK);
+		OCR1AL_H=((Speed_Value>>ZEROBITS) & MASK);
 		DIO_WritePin(PIN30,LOW);
 		DIO_WritePin(PIN31,HIGH);				
 	}

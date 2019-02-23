@@ -21,7 +21,7 @@ volatile uint16 TOP_Value_L;
 /************************************************************************/
 
 
-void timer_init(Mode)
+void timer_init(uint8 Mode)
 {	
 if(FAST_PWM==0)
 {
