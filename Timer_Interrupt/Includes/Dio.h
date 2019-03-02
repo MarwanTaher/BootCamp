@@ -51,9 +51,27 @@
 #define INPUT 0
 #define HIGH 1
 #define LOW 0
+#define PRESSED 1
+#define NOTPRESSED 0
+
+#define BUTTON1 PIN10
 
 #define  ZERO 0
 #define  ONE 1
+#define  TWO 2
+#define THREE 3
+#define FOUR 4
+#define FIVE 5
+#define  SIX 6
+#define SEVEN 7
+#define EIGHT 8
+#define NINE 9
+#define TEN 10
+#define SIXTEEN 16
+#define TWENTYFOUR 24
+#define THIRTYTWO 32  
+#define  TRUE 1
+#define FALSE 0
 
 
 #endif

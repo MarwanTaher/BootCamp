@@ -64,9 +64,12 @@
 #define FIVE 5
 #define  SIX 6
 #define SEVEN 7
-#define Eight 8
+#define EIGHT 8
 #define NINE 9
 #define TEN 10
+#define SIXTEEN 16
+#define TWENTYFOUR 24
+#define THIRTYTWO 32  
 #define  TRUE 1
 #define FALSE 0
 
